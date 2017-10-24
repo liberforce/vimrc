@@ -9,3 +9,12 @@ filetype plugin indent on
 set modeline
 "Search modeline in the n first lines of the file
 set modelines=5
+
+"Highlight unwanted spaces
+""""""""""""""""""""""""""
+"http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+
+"Show trailing whitespace:
+match ExtraWhitespace /\s\+$/
+match ExtraWhitespace /\s\+\%#\@<!$/
