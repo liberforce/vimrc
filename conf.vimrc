@@ -1,6 +1,9 @@
 "Chose a color palette appropriate to dark background
 set background=dark
 
+"Enable syntax highlighting
+syntax on
+
 "Enable the filetype detection and indent plugins
 filetype plugin indent on
 
