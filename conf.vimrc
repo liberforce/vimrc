@@ -21,3 +21,12 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 "Show trailing whitespace:
 match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+\%#\@<!$/
+
+" HARD MODE
+"""""""""""
+
+" Don't use arrow keys to force using motions
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
