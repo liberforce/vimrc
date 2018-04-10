@@ -25,6 +25,11 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+\%#\@<!$/
 
+" SPLITS
+""""""""
+set splitright
+set splitbelow
+
 " HARD MODE
 """""""""""
 
