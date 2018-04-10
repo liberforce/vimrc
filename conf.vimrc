@@ -25,6 +25,10 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+\%#\@<!$/
 
+"Add markdown preview
+"nnoremap <leader>m :w<cr>:!pandoc -s -f markdown -t html -o expand('%:r').html expand('%:f).md<cr><cr>
+"command! execute "
+
 " SPLITS
 """"""""
 set splitright
