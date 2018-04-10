@@ -13,6 +13,9 @@ set modeline
 "Search modeline in the n first lines of the file
 set modelines=5
 
+"Show line numbers
+set number
+
 "Highlight unwanted spaces
 """"""""""""""""""""""""""
 "http://vim.wikia.com/wiki/Highlight_unwanted_spaces
