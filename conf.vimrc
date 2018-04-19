@@ -16,6 +16,15 @@ set modelines=5
 "Show line numbers
 set number
 
+" FINDING FILES
+"""""""""""""""
+" See https://www.youtube.com/watch?v=XA2WjJbmmoM
+
+" Allow fuzzy-finding filenames
+set path+=**
+" Display a menubar for tab completion
+set wildmenu
+
 "Highlight unwanted spaces
 """"""""""""""""""""""""""
 "http://vim.wikia.com/wiki/Highlight_unwanted_spaces
