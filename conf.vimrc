@@ -15,6 +15,7 @@ set modelines=5
 
 "Show line numbers
 set number
+set relativenumber
 
 " FINDING FILES
 """""""""""""""
