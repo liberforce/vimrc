@@ -44,11 +44,13 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 set splitright
 set splitbelow
 
-" HARD MODE
-"""""""""""
-
+" IMPROVED MAPPINGS
+"""""""""""""""""""
 " Don't use arrow keys to force using motions
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" Remap Caps-Lock to Esc
+" This is done at system level, with gnome-tweak-tool
