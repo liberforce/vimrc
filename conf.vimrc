@@ -4,7 +4,11 @@ set background=dark
 "Enable syntax highlighting
 syntax on
 
-"Enable the filetype detection and indent plugins
+"Enable:
+"- filetype detection
+"- filetype-based plugin loading from the 'ftplugin' dir
+"- filetype-based indent plugins from the 'indent' dir
+"https://robots.thoughtbot.com/writing-vim-syntax-plugins
 filetype plugin indent on
 
 "Comply to modelines in files
