@@ -21,6 +21,13 @@ set modelines=5
 set number
 set relativenumber
 
+" Shortcut to rapidly display hidden characters
+" http://vimcasts.org/episodes/show-invisibles/
+nmap <leader>l :set list!<CR>
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬,space:·
+
+
 " FINDING FILES
 """""""""""""""
 " See https://www.youtube.com/watch?v=XA2WjJbmmoM
@@ -39,10 +46,12 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+\%#\@<!$/
 
+
 " SPLITS
 """"""""
 set splitright
 set splitbelow
+
 
 " IMPROVED MAPPINGS
 """""""""""""""""""
