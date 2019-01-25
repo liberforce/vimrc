@@ -4,6 +4,9 @@ set background=dark
 "Enable syntax highlighting
 syntax on
 
+"Globally change the leader key
+let mapleader = "§"
+
 "Enable:
 "- filetype detection
 "- filetype-based plugin loading from the 'ftplugin' dir
