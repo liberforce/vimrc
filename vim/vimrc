@@ -31,6 +31,15 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬,space:·
 
 
+" SEARCH
+""""""""
+set hlsearch
+set incsearch
+
+" Disable highlight until next search
+nnoremap <Leader>/ :nohlsearch<CR>
+
+
 " FINDING FILES
 """""""""""""""
 " See https://www.youtube.com/watch?v=XA2WjJbmmoM
