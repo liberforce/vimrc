@@ -55,21 +55,21 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 set splitright
 set splitbelow
 
-
-" IMPROVED MAPPINGS
-"""""""""""""""""""
-" Don't use arrow keys to force using motions
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
 " Easily move between split windows
 " http://vimcasts.org/episodes/working-with-windows/
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+
+" QUICKLIST
+"""""""""""
+" Moving in the quicklist
+nnoremap <Up> :cprevious<CR>
+nnoremap <Down> :cnext<CR>
+nnoremap <Left> :colder<CR>
+nnoremap <Right> :cnewer<CR>
 
 
 " EXTERNAL MAPPINGS
