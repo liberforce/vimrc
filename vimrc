@@ -50,8 +50,8 @@ match ExtraWhitespace /\s\+$/
 match ExtraWhitespace /\s\+\%#\@<!$/
 
 
-" SPLITS
-""""""""
+" SPLIT WINDOWS
+"""""""""""""""
 set splitright
 set splitbelow
 
@@ -64,12 +64,15 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-" Remap Caps-Lock to Esc
-" This is done at system level, with gnome-tweak-tool
-
 " Easily move between split windows
 " http://vimcasts.org/episodes/working-with-windows/
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+
+" EXTERNAL MAPPINGS
+"""""""""""""""""""
+" Remap Caps-Lock to Esc
+" This is done at system level, with gnome-tweak-tool
