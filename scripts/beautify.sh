@@ -35,6 +35,7 @@ main()
 
     VIM=$(which vim)
     if [ ! -f "$VIM" ]; then
+        echo "This script requires vim, please install it."
         exit $ERR_VIM_NOT_FOUND
     fi
 
