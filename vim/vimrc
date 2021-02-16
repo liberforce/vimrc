@@ -44,8 +44,14 @@ nnoremap <Leader>/ :nohlsearch<CR>
 """""""""""""""
 " See https://www.youtube.com/watch?v=XA2WjJbmmoM
 
-" Allow fuzzy-finding filenames
+" Allow fuzzy-finding filenames with :find
 set path+=**
+
+" Ignore compiled files and virtualenvs
+set wildignore+=*.pyc
+set wildignore+=*.so
+set wildignore+=./venv/**
+
 " Display a menubar for tab completion
 set wildmenu
 
