@@ -97,3 +97,12 @@ nnoremap <Right> :cnewer<CR>
 """""""""""""""""""
 " Build current buffer (%)
 noremap <silent> <F5> :make %<CR><CR>
+
+
+" AZERTY KEYBOARD
+"""""""""""""""""
+" Use "Français (sans touche morte Sun)" or "Français (azerty)" layouts so that
+" ` and ^ are not dead keys and require only a single keypress.
+
+" Allow to look for tags with 2 fingers (Shift+the-key-where-]-is-located) instead of 3 (Ctrl+Altgr+])
+nnoremap ° <C-]>zt
