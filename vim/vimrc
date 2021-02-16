@@ -91,3 +91,9 @@ nnoremap <Right> :cnewer<CR>
 """""""""""""""""""
 " Remap Caps-Lock to Esc
 " This is done at system level, with gnome-tweak-tool
+
+
+" BUILDING, LINTING
+"""""""""""""""""""
+" Build current buffer (%)
+noremap <silent> <F5> :make %<CR><CR>
