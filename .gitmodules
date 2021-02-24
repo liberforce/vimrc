@@ -1,5 +1,5 @@
 [submodule "vim/pack/my-plugins/start/vim-compilers"]
-	path = vim/pack/my-plugins/start/vim-compilers
+	path = vim/pack/Konfekt/start/vim-compilers
 	url = https://github.com/Konfekt/vim-compilers.git
 [submodule "vim/pack/my-plugins/start/vim-surround"]
 	path = vim/pack/tpope/start/vim-surround
