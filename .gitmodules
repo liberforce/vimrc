@@ -1,0 +1,3 @@
+[submodule "vim/pack/my-plugins/start/vim-compilers"]
+	path = vim/pack/my-plugins/start/vim-compilers
+	url = https://github.com/Konfekt/vim-compilers.git
