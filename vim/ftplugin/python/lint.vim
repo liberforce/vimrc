@@ -2,4 +2,4 @@
 " See https://stackoverflow.com/questions/3839454/how-to-use-pylint-in-vim
 
 " Make pylint the active compiler when editing a python file
-compiler! pylint
+compiler pylint
