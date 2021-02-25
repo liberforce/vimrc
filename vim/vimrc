@@ -81,10 +81,10 @@ map <C-l> <C-w>l
 " QUICKLIST
 """""""""""
 " Moving in the quicklist
-nnoremap <Up> :cprevious<CR>
-nnoremap <Down> :cnext<CR>
-nnoremap <Left> :colder<CR>
-nnoremap <Right> :cnewer<CR>
+nnoremap <silent> <Up> :cprevious<CR>
+nnoremap <silent> <Down> :cnext<CR>
+nnoremap <silent> <Left> :colder<CR>
+nnoremap <silent> <Right> :cnewer<CR>
 
 
 " EXTERNAL MAPPINGS
