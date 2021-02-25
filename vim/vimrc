@@ -98,6 +98,20 @@ nnoremap <Right> :cnewer<CR>
 " Build current buffer (%)
 noremap <silent> <F5> :make %<CR><CR>
 
+" Let ALE call fixing tool when the file is saved
+let g:ale_fix_on_save = 0
+
+" See :help ale-completion
+let g:ale_completion_enabled = 1
+
+" Go to symbol definition
+nnoremap ° :ALEGoToDefinition
+
+" Use the quickfix list to navigate between errors/warnings
+let g:ale_set_quickfix = 1
+
+" Let us know which linter was triggered
+let g:ale_echo_msg_format = '[%linter%] %s'
 
 " AZERTY KEYBOARD
 """""""""""""""""
@@ -105,4 +119,5 @@ noremap <silent> <F5> :make %<CR><CR>
 " ` and ^ are not dead keys and require only a single keypress.
 
 " Allow to look for tags with 2 fingers (Shift+the-key-where-]-is-located) instead of 3 (Ctrl+Altgr+])
-nnoremap ° <C-]>zt
+" FIXME: fallback to this mapping if ALE is not loaded
+" nnoremap ° <C-]>zt
