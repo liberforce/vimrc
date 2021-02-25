@@ -98,6 +98,19 @@ nnoremap <silent> <Right> :cnewer<CR>
 " Build current buffer (%)
 noremap <silent> <F5> :make %<CR><CR>
 
+
+" AZERTY KEYBOARD
+"""""""""""""""""
+" Use "Français (sans touche morte Sun)" or "Français (azerty)" layouts so that
+" ` and ^ are not dead keys and require only a single keypress.
+
+" Allow to look for tags with 2 fingers (Shift+the-key-where-]-is-located) instead of 3 (Ctrl+Altgr+])
+" FIXME: fallback to this mapping if ALE is not loaded
+" nnoremap ° <C-]>zt
+
+
+" PLUGIN: ALE
+"""""""""""""
 " Let ALE call fixing tool when the file is saved
 let g:ale_fix_on_save = 0
 
@@ -111,13 +124,17 @@ nnoremap ° :ALEGoToDefinition
 let g:ale_set_quickfix = 1
 
 " Let us know which linter was triggered
-let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%:%code%] %s'
 
-" AZERTY KEYBOARD
-"""""""""""""""""
-" Use "Français (sans touche morte Sun)" or "Français (azerty)" layouts so that
-" ` and ^ are not dead keys and require only a single keypress.
 
-" Allow to look for tags with 2 fingers (Shift+the-key-where-]-is-located) instead of 3 (Ctrl+Altgr+])
-" FIXME: fallback to this mapping if ALE is not loaded
-" nnoremap ° <C-]>zt
+" HELP SYSTEM
+"""""""""""""
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+"
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
