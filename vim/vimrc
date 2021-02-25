@@ -112,7 +112,7 @@ noremap <silent> <F5> :make %<CR><CR>
 " PLUGIN: ALE
 """""""""""""
 " Let ALE call fixing tool when the file is saved
-let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 1
 
 " See :help ale-completion
 let g:ale_completion_enabled = 1
