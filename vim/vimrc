@@ -114,8 +114,7 @@ noremap <silent> <F5> :make %<CR><CR>
 " ` and ^ are not dead keys and require only a single keypress.
 
 " Allow to look for tags with 2 fingers (Shift+the-key-where-]-is-located) instead of 3 (Ctrl+Altgr+])
-" FIXME: fallback to this mapping if ALE is not loaded
-" nnoremap ° <C-]>zt
+nnoremap ° <C-]>zt
 
 
 " PLUGIN: ALE
@@ -127,7 +126,9 @@ let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 
 " Go to symbol definition
-nnoremap ° :ALEGoToDefinition
+" FIXME: requires a Python Language Server like Palantir
+" (implementation of the Language Server Protocol)
+" nnoremap ° :ALEGoToDefinition
 
 " Use the quickfix list to navigate between errors/warnings
 let g:ale_set_quickfix = 1
