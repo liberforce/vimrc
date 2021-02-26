@@ -81,10 +81,19 @@ map <C-l> <C-w>l
 " QUICKLIST
 """""""""""
 " Moving in the quicklist
-nnoremap <silent> <Up> :cprevious<CR>
-nnoremap <silent> <Down> :cnext<CR>
-nnoremap <silent> <Left> :colder<CR>
-nnoremap <silent> <Right> :cnewer<CR>
+nnoremap <silent> <C-Up> :cprevious<CR>
+nnoremap <silent> <C-Down> :cnext<CR>
+nnoremap <silent> <C-Left> :cfirst<CR>
+nnoremap <silent> <C-Right> :clast<CR>
+
+
+" LOCATION LIST
+"""""""""""""""
+" Moving in the location list
+nnoremap <silent> <Up> :lprevious<CR>
+nnoremap <silent> <Down> :lnext<CR>
+nnoremap <silent> <Left> :lfirst<CR>
+nnoremap <silent> <Right> :llast<CR>
 
 
 " EXTERNAL MAPPINGS
