@@ -10,3 +10,6 @@
 [submodule "vim/pack/dmerejkowsky/start/vim-ale"]
 	path = vim/pack/dmerejkowsky/start/vim-ale
 	url = https://github.com/dmerejkowsky/vim-ale.git
+[submodule "vim/pack/tpope/start/vim-unimpaired"]
+	path = vim/pack/tpope/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
