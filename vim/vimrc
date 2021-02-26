@@ -130,9 +130,6 @@ let g:ale_lint_on_text_changed = 'never'
 " (implementation of the Language Server Protocol)
 " nnoremap ° :ALEGoToDefinition
 
-" Use the quickfix list to navigate between errors/warnings
-let g:ale_set_quickfix = 1
-
 " Let us know which linter was triggered
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
