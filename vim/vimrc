@@ -119,11 +119,11 @@ nnoremap ° <C-]>zt
 
 " PLUGIN: ALE
 """""""""""""
-" Let ALE call fixing tool when the file is saved
+" Let ALE call formatting tools when the file is saved
 let g:ale_fix_on_save = 1
 
-" See :help ale-completion
-let g:ale_completion_enabled = 1
+" Lint only on save
+let g:ale_lint_on_text_changed = 'never'
 
 " Go to symbol definition
 " FIXME: requires a Python Language Server like Palantir
@@ -144,7 +144,7 @@ let g:ale_echo_msg_format = '[%linter%:%code%] %s'
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
 packloadall
-"
+
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
