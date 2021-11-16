@@ -81,8 +81,8 @@ map <C-l> <C-w>l
 " QUICKLIST
 """""""""""
 " Moving in the quicklist
-nnoremap <silent> <C-Up> :cabove<CR>
-nnoremap <silent> <C-Down> :cbelow<CR>
+nnoremap <silent> <C-Up> :cprev<CR>
+nnoremap <silent> <C-Down> :cnext<CR>
 nnoremap <silent> <C-Left> :cfirst<CR>
 nnoremap <silent> <C-Right> :clast<CR>
 
